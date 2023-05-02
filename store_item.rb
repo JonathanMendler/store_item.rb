@@ -24,3 +24,6 @@ Class.Product
     @inventory
   end
 end
+
+product_01.new=("green", 12, 36)
+product_02.new=("orange", 14, 7)
