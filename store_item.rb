@@ -37,3 +37,4 @@ product_02 = Product.new("orange", 14, 7)
 product_03 = Product.new("red", 28, 11)
 puts product_01.color
 product_02.print_info
+puts product_01.add_tax
