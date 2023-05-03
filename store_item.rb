@@ -5,10 +5,13 @@
 #puts "#{product_01[:color]}"
 
 class Product
-  def initialize(color, price, inventory)
-    @color = color
-    @price = price
-    @inventory = inventory
+  attr_reader :color, :price, :inventory
+  attr_writer :add_tax
+
+  def initialize(input_options)
+    @color = input_options[color:]
+    @price = input_options[price:]
+    @inventory = input_options[inventory:]
   end
 
   def color
@@ -32,9 +35,10 @@ class Product
   end
 end
 
-product_01 = Product.new("green", 12, 36)
-product_02 = Product.new("orange", 14, 7)
-product_03 = Product.new("red", 28, 11)
+product_01 = Product.new(color: "green", price: 12, inventory: 36)
+product_02 = Product.new(color: "orange", price: 14, inventory: 7)
+product_03 = Product.new(color: "red", price: 28, inventory: 11)
 puts product_01.color
 product_02.print_info
 puts product_01.add_tax
+puts product_03
