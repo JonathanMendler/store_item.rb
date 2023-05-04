@@ -1,4 +1,5 @@
 require "./store_item.rb"
+require "./food_product.rb"
 
 module Printable
   def print_info

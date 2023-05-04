@@ -1,4 +1,4 @@
-require "./Food_product.rb"
+require "./food_product.rb"
 require "./store_module.rb"
 
 class Product
